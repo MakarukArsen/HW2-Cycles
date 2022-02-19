@@ -11,7 +11,8 @@ while(Number.isNaN(m) || !Number.isInteger(m) || m == String() || m == null){
 }
 
 let skipPairNumbers = confirm("Пропускати парні числа?");
-for(let total = 0; n <= m; ++n){
+let total;
+for(total = 0; n <= m; ++n){
     if(skipPairNumbers){
         if((n % 2) === 0){
             continue
@@ -24,3 +25,4 @@ for(let total = 0; n <= m; ++n){
         console.log(total)
     }
 }
+alert(total);
