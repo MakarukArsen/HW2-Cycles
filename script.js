@@ -15,8 +15,6 @@ let total;
 for(total = 0; n <= m; ++n){
     if(skipPairNumbers && n % 2 == 0 ){
         continue
-        total += n
-        console.log(total)
     } else{
         total += n
         console.log(total)
